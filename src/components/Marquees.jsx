@@ -38,7 +38,7 @@ const Marquees = () => {
 
   return (
     <div className='mt-32'>
-        {mardata.map((elem,idx) => (<Marquee key={idx} elems={elem} />))}
+        {mardata.map((elem,idx) => (<Marquee key={idx} elems={elem} direction={idx == 0 ? "left" : "right"} />))}
     </div>
   )
 }
