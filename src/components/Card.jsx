@@ -1,9 +1,9 @@
 import React from 'react'
 import { MdOutlineArrowRightAlt } from "react-icons/md";
 
-const Card = ({data}) => {
+const Card = ({data,w}) => {
   return (
-    <div className={`w-${data.w} flex flex-col justify-between p-4 rounded-xl bg-zinc-700 hover:bg-violet-600`}>
+    <div className={`${w} flex flex-col justify-between p-4 rounded-xl bg-zinc-700 hover:bg-violet-600`}>
         <div>
             <div className='w-full flex justify-between items-center'>
                 <h1 className='text-sm capitalize'>{data.t1}</h1>

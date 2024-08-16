@@ -15,7 +15,7 @@ const Stripes = () => {
   return (
     <div className='w-full h-16 mt-8 flex flex-wrap'>
         {stripe.map((elem,idx) => (
-            <div className='py-1 px-8 h-12 w-[16.45vw] border border-zinc-700 flex items-center justify-between'>
+            <div key={idx} className='py-1 px-8 h-12 w-[16.45vw] border border-zinc-700 flex items-center justify-between'>
                 <img className='w-[60%] h-[60%]' src={elem.url} alt="ok" />
                 <h1>{elem.n}</h1>
             </div>
